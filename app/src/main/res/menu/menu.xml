@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Share"
+        android:id="@+id/btn_share"/>
+    <item android:title="Exit"
+        android:id="@+id/btn_exit"/>
+    <item android:title="Setting"
+        android:id="@+id/btn_setting"/>
+</menu>

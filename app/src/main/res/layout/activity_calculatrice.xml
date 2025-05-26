@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:weightSum="22"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculatrice">
+
+    <TextView
+        android:id="@+id/txt_resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="bottom|end"
+        android:textSize="65dp"
+        android:text="0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginTop="3dp"
+            android:textSize="48dp"
+            android:text="7"
+            android:onClick ="OperationsNombre"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginTop="2dp"
+            android:onClick="operationsNombre"
+            android:textSize="48dp"
+            android:text="8"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:onClick="operationsNombre"
+            android:text="9"
+            android:textSize="48dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_div"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginTop="2dp"
+            android:onClick="operationsNombre"
+            android:textSize="48dp"
+            android:text="/"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:inputType="number"
+            android:textSize="48dp"
+            android:text="4"
+            android:onClick ="OperationsNombre"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:onClick="operationsNombre"
+            android:inputType="number"
+            android:textSize="48dp"
+            android:text="5"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:onClick="operationsNombre"
+            android:inputType="number"
+            android:textSize="48dp"
+            android:text="6"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_mult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
+            android:onClick="operationsNombre"
+            android:text="*"
+            android:textSize="48dp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+    android:weightSum="4"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+        android:textSize="48dp"
+        android:inputType="number"
+        android:text="1"
+        android:onClick ="OperationsNombre"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:layout_marginTop="2dp"
+        android:onClick="operationsNombre"
+        android:textSize="48dp"
+        android:text="2"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:onClick="operationsNombre"
+        android:textSize="48dp"
+        android:text="3"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/btn_soust"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginTop="2dp"
+        android:onClick="operationsNombre"
+        android:textSize="48dp"
+        android:text="-"
+        tools:ignore="OnClick" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_CLR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_error"
+            android:onClick="OperationsNombre"
+            android:text="C"
+            android:textSize="48dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:inputType="number"
+            android:onClick="operationsNombre"
+            android:textSize="48dp"
+            android:text="0"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_egal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginTop="2dp"
+            android:onClick="operationsNombre"
+            android:textSize="48dp"
+            android:text="="
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginTop="2dp"
+            android:onClick="operationsNombre"
+            android:textSize="48dp"
+            android:text="+"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+</LinearLayout>

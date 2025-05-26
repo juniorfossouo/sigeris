@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.hardware.telephony" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_DATE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/sans_titre"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sans_titre"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sigeris1"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="31">
+        <activity
+            android:name=".Shimmer"
+            android:label="Shimmer"
+            android:parentActivityName=".Menu"
+            android:exported="true" />
+        <activity
+            android:name=".Sms_app"
+            android:exported="true"
+            android:label="SMS APP"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".RoomDataBase"
+            android:exported="true"
+            android:label="RoomDataBase"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Action_bar"
+            android:exported="false" />
+        <activity
+            android:name=".SharesPreferences"
+            android:exported="true"
+            android:label="SharedPreferences"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Calculatrice"
+            android:exported="true"
+            android:label="CALCULATRICE"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Conversation"
+            android:exported="true"
+            android:parentActivityName=".Fonction" />
+        <activity
+            android:name=".Convertisseur"
+            android:exported="true"
+            android:label="Convertisseur"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Compteur"
+            android:exported="true"
+            android:label="Compteur"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Jeux"
+            android:exported="true"
+            android:label="Jeux"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Fonction"
+            android:exported="true"
+            android:label="Fontions"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Bienvenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nbr_suivent"
+            android:exported="true"
+            android:label="Prime"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".devinettes"
+            android:exported="true"
+            android:label="Prime"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Fruit"
+            android:exported="true"
+            android:label="prime"
+            android:parentActivityName=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".boucle"
+            android:exported="true"
+            android:label="boucle"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Decision"
+            android:exported="true"
+            android:label="Decision"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Exo2"
+            android:exported="true"
+            android:label="EXO2"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="MAINACTIVITY"
+            android:parentActivityName=".Menu" />
+        <activity
+            android:name=".Menu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
